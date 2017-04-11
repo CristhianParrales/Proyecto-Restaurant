@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B13D4FF91E9D3BCF005A1292 /* CategoriaCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D4FF81E9D3BCF005A1292 /* CategoriaCellTableViewCell.swift */; };
+		B13D4FFB1E9D585C005A1292 /* PlatosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D4FFA1E9D585C005A1292 /* PlatosTableViewController.swift */; };
+		B13D4FFD1E9D6C59005A1292 /* CustomCellPlatoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B13D4FFC1E9D6C59005A1292 /* CustomCellPlatoTableViewCell.swift */; };
 		B161D1AC1E9C796300A8BA56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B161D1AB1E9C796300A8BA56 /* AppDelegate.swift */; };
 		B161D1AE1E9C796300A8BA56 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B161D1AD1E9C796300A8BA56 /* FirstViewController.swift */; };
 		B161D1B01E9C796300A8BA56 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B161D1AF1E9C796300A8BA56 /* SecondViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B13D4FF81E9D3BCF005A1292 /* CategoriaCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriaCellTableViewCell.swift; sourceTree = "<group>"; };
+		B13D4FFA1E9D585C005A1292 /* PlatosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlatosTableViewController.swift; path = ../PlatosTableViewController.swift; sourceTree = "<group>"; };
+		B13D4FFC1E9D6C59005A1292 /* CustomCellPlatoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCellPlatoTableViewCell.swift; sourceTree = "<group>"; };
 		B161D1A81E9C796300A8BA56 /* Proyecto Restaurant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Proyecto Restaurant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B161D1AB1E9C796300A8BA56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B161D1AD1E9C796300A8BA56 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +43,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B13D4FFE1E9D6C6C005A1292 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B161D1AB1E9C796300A8BA56 /* AppDelegate.swift */,
+				B161D1B41E9C796300A8BA56 /* Assets.xcassets */,
+				B161D1B61E9C796300A8BA56 /* LaunchScreen.storyboard */,
+				B161D1B91E9C796300A8BA56 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B161D19F1E9C796300A8BA56 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +73,13 @@
 		B161D1AA1E9C796300A8BA56 /* Proyecto Restaurant */ = {
 			isa = PBXGroup;
 			children = (
-				B161D1AB1E9C796300A8BA56 /* AppDelegate.swift */,
+				B13D4FFA1E9D585C005A1292 /* PlatosTableViewController.swift */,
 				B161D1AD1E9C796300A8BA56 /* FirstViewController.swift */,
 				B161D1AF1E9C796300A8BA56 /* SecondViewController.swift */,
+				B13D4FF81E9D3BCF005A1292 /* CategoriaCellTableViewCell.swift */,
+				B13D4FFC1E9D6C59005A1292 /* CustomCellPlatoTableViewCell.swift */,
 				B161D1B11E9C796300A8BA56 /* Main.storyboard */,
-				B161D1B41E9C796300A8BA56 /* Assets.xcassets */,
-				B161D1B61E9C796300A8BA56 /* LaunchScreen.storyboard */,
-				B161D1B91E9C796300A8BA56 /* Info.plist */,
+				B13D4FFE1E9D6C6C005A1292 /* Supporting Files */,
 			);
 			path = "Proyecto Restaurant";
 			sourceTree = "<group>";
@@ -141,7 +158,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B161D1B01E9C796300A8BA56 /* SecondViewController.swift in Sources */,
+				B13D4FFD1E9D6C59005A1292 /* CustomCellPlatoTableViewCell.swift in Sources */,
+				B13D4FFB1E9D585C005A1292 /* PlatosTableViewController.swift in Sources */,
 				B161D1AC1E9C796300A8BA56 /* AppDelegate.swift in Sources */,
+				B13D4FF91E9D3BCF005A1292 /* CategoriaCellTableViewCell.swift in Sources */,
 				B161D1AE1E9C796300A8BA56 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,6 +326,7 @@
 				B161D1BE1E9C796300A8BA56 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
