@@ -10,16 +10,16 @@ import UIKit
 
 class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
 
-    var arrayCtaegorias = [[String:String]]()
+    var arrayCategorias = [[String:String]]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let c1 = ["idc":"1","nomc":"Entradas"]
-        let c2 = ["idc":"2","nomc":"Segundos"]
-        let c3 = ["idc":"3","nomc":"Sopas"]
-        let c4 = ["idc":"4","nomc":"Postre"]
-        let c5 = ["idc":"5","nomc":"Vinos"]
-        arrayCtaegorias = [c1, c2, c3, c4,c5]
+                
+        // leyendo desde tabla Categorias
+        arrayCategorias =  DataBase().ejecutarSelect("SELECT * FROM categoria_platos") as! [[String: String]]
+        
+        print(arrayCategorias)
         
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style: .plain, target: nil, action: nil)
     }
@@ -35,15 +35,15 @@ class SecondViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return arrayCtaegorias.count
+        return arrayCategorias.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellID = "caldaCategoria"
+        let cellID = "celdaCategoria"
         let celda = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! CategoriaCellTableViewCell
         
-        let nombreCategoria = arrayCtaegorias[indexPath.row]["nomc"]
+        let nombreCategoria = arrayCategorias[indexPath.row]["nombre_categoria"]
         
        // celda.textLabel?.text = nombreCategoria
         celda.nombreCatCell.text = nombreCategoria
